@@ -9,7 +9,10 @@ class App extends Component {
 
     constructor(props){
         super(props);
-        this.state = ({text:''});
+        this.state = ({
+                text:'',
+                list: []
+            });
     };
     addItem=(e) => {
         if (e.charCode === 13) {
