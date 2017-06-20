@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import List from './List';
+import Buttons from './Buttons';
+import InputHello from './InputHello'
 
 let todoList = [];
 
@@ -42,6 +44,8 @@ class App extends Component {
             onKeyPress={this.addItem}
         />
           <List data={todoList}/>
+          <Buttons />
+          <InputHello />
       </div>
     );
   }

@@ -6,6 +6,9 @@ body {
 button {
   margin:0 20px;
 }
+.color-buttons button {
+  margin: 20px;
+}
 .container {
   width: 50%;
   display: block;
@@ -16,3 +19,16 @@ span {
   display: inline-block;
   width: 80%;
 }
+.yellow {
+  background: yellow;
+}
+.red {
+  background: red;
+}
+.green {
+  background: green;
+}
+.blue {
+  background: blue;
+}
+
