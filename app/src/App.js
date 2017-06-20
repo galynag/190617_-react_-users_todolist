@@ -5,6 +5,9 @@ import List from './List';
 import Buttons from './Buttons';
 import InputHello from './InputHello';
 import PassCheck from './PassCheck';
+import Timer from './Timer';
+import ProgressBar from './ProgressBar';
+import LoadMoreBlocks from './LoadMoreBlocks';
 
 let todoList = [];
 
@@ -58,6 +61,10 @@ class App extends Component {
               <Buttons />
               <InputHello />
               <PassCheck />
+              <Timer />
+              <ProgressBar />
+              <LoadMoreBlocks />
+
           </div>
 
       </div>

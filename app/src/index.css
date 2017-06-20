@@ -46,3 +46,34 @@ input {
 .done {
   text-decoration: line-through;
 }
+#counter {
+  position: relative;
+  width: 65%;
+  height: 50px;
+  border-radius: 15%;
+  background: lightgrey;
+  display: inline-block;
+}
+#inner-counter {
+  position: absolute;
+  width: 0;
+  height: 45px;
+  background: gold;
+  border-radius: 15%;
+  top:50%;
+  transform: translate(0,-50%);
+}
+.btn-bar {
+  border-radius: 50%;
+  outline-style: none;
+}
+.box {
+  display: inline-block;
+  width: 17.5%;
+  height: 30px;
+  background: red;
+  margin: 5px;
+}
+.none {
+  display: none;
+}
