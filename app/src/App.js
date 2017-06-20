@@ -3,7 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import List from './List';
 import Buttons from './Buttons';
-import InputHello from './InputHello'
+import InputHello from './InputHello';
+import PassCheck from './PassCheck';
 
 let todoList = [];
 
@@ -19,9 +20,7 @@ class App extends Component {
     addItem=(e) => {
         if (e.charCode === 13) {
             this.setState({text:e.target.value});
-            console.log(e.target.value);
             todoList.push(e.target.value);
-            console.log(todoList);
             this.setState({text:''});
         }
     };
@@ -29,23 +28,38 @@ class App extends Component {
         this.setState({text:e.target.value});
     }
   render() {
+
     return (
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Task / React</h2>
         </div>
-          <h1>To Do List</h1>
-        <input
-            type="text"
-            placeholder="type new item & press Enter"
-            value={this.state.text}
-            onChange={this.valueItem}
-            onKeyPress={this.addItem}
-        />
-          <List data={todoList}/>
-          <Buttons />
-          <InputHello />
+          <div className="container">
+              <h2 className="left">Задание 1: </h2>
+              <p className="left">Написать простой To Do List на react</p>
+              <p className="left">При нажании на Enter в инпуте текст должен добавляться к списку заданий</p>
+              <p className="left">При нажатии на кнопку DEL, - удалять соответствующую строку.</p>
+
+          <div className="answer center">
+              <h1>To Do List</h1>
+            <input
+                type="text"
+                placeholder="type new item & press Enter"
+                value={this.state.text}
+                onChange={this.valueItem}
+                onKeyPress={this.addItem}
+            />
+
+
+              <List data={todoList}/>
+          </div>
+
+              <Buttons />
+              <InputHello />
+              <PassCheck />
+          </div>
+
       </div>
     );
   }

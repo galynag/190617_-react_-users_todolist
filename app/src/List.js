@@ -24,7 +24,7 @@ export default class List extends Component {
              )
          });
         return(
-            <div className="container">
+            <div>
                 <ol>
                     {templateList}
                 </ol>

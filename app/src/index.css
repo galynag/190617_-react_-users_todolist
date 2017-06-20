@@ -31,4 +31,18 @@ span {
 .blue {
   background: blue;
 }
-
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.answer {
+  background: lightgrey;
+}
+input {
+  width: 80%;
+}
+.done {
+  text-decoration: line-through;
+}
